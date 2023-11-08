@@ -1,0 +1,17 @@
+<script>
+    var x = parseInt(prompt('Digite o valor de x:'));
+    var y = parseInt(prompt('Digite o valor de y:'));
+    
+    if (!isNaN(x) && !isNaN(y)) {
+      document.writeln('<h1>Tabuada de ' + x + ' até ' + y + '</h1>');
+      for (let i = x; i <= y; i++) {
+        document.writeln('<h2>Tabuada do ' + i + '</h2>');
+        for (let j = 1; j <= 10; j++) {
+          var resultado = i * j;
+          document.writeln('<p>' + i + ' x ' + j + ' = ' + resultado + '</p>');
+        }
+      }
+    } else {
+      document.writeln('<h1>Por favor, insira números válidos para x e y.</h1>');
+    }
+    </script>

@@ -1,0 +1,13 @@
+<script>
+    var numero = prompt('Digite um valor para calcular a tabuada');
+    numero = parseFloat(numero); // Converte a entrada do usuário em um número de ponto flutuante
+    
+    if (!isNaN(numero)) {
+      for (let index = 1; index <= 10; index++) {
+        var result = index + 'x' + numero + '=' + (numero * index);
+        document.writeln('<h1>' + result + '</h1>');
+      }
+    } else {
+      document.writeln('<h1>Por favor, insira um número válido.</h1>');
+    }
+    </script>
